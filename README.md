@@ -7,8 +7,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -17,14 +15,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -39,8 +36,6 @@
     <a href="https://github.com/mcsantiago/bvh2fbx/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -65,12 +60,11 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
-This script was literally written to quickly convert some BVH files to FBX. This might be useful to someone else.
 
+## About The Project
+
+This script was literally written to quickly convert some BVH files to FBX. This might be useful to someone else.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -78,8 +72,8 @@ This script was literally written to quickly convert some BVH files to FBX. This
 
 - [Blender](https://www.blender.org/)
 
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -87,34 +81,71 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* pip
+To run this, you'll need Blender and its wrapper API in Python.
+
+#### Installing Blender
+
+##### Windows
+
+TODO: Windows instructions
+
+##### MacOS
+
+Install blender via Homebrew
+
+```
+brew install blender
+```
+
+#### Installing BPY
+
+##### MacOS
+
+[https://pypi.org/project/bpy/](https://pypi.org/project/bpy/)
+
+- pip
   ```sh
   pip install bpy
   ```
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 For Windows, make sure all of your BVH files are in the same folder as the `bvh2fbx.bat` script. Then run the following:
+
 ```
 ./bvh2fbx.bat
 ```
 
+<br>
+
+For Mac (and Linux maybe), make sure all of your BVH files are in the same folder as the `bvh2fbx.sh` script. Then run the following:
+
+```
+./bvh2fbx.sh
+```
+
+To run on an individual file:
+
+```
+blender -b --python ./convert_fbx.py -- [FILE_NAME].bvh
+```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
+
 ## Roadmap
+
 No official roadmap for this script, but if you want you can suggest some features.
 
 See the [open issues](https://github.com/mcsantiago/bvh2fbx/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -130,20 +161,17 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/mcsantiago/bvh2fbx.svg?style=for-the-badge
 [contributors-url]: https://github.com/mcsantiago/bvh2fbx/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/mcsantiago/bvh2fbx.svg?style=for-the-badge
